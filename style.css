@@ -1,0 +1,57 @@
+.yoda {
+  position: absolute;
+  margin: 150px
+}
+
+.moon {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+
+.spinner {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 50px auto;
+  z-index: -1;
+  animation: spinner 15s infinite ease-out;
+}
+
+.moon {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+@keyframes spinner {
+  0% { 
+   
+    transform: translateY(90px) 
+  } 100% {
+  
+    transform: translate(-40000)
+  }
+}
+
+.ship {
+  height: 50%;
+  width: 50%;
+  margin: 50px auto;
+  position: absolute;
+  top: 180px;
+  left: -70px;
+  transform: scale(0.20);
+
+  transition: transform 0s ease-in-out
+}
+
+.ship:hover {
+  transform: scale(0.8);
+  transition: transform 4s ease-in-out
+}
+
